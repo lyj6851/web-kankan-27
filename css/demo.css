@@ -1,0 +1,49 @@
+
+#box{
+	width: 470px;
+	height: 150px;
+	margin:30px auto;
+	border:1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+}
+#box ul{
+	/*width: 470px;*/
+	z-index: 1;
+	position: absolute;
+	left:0;
+	top:0;
+	/*background: red;*/
+	/*width: 100%;*/
+	/*height: 100%;*/
+	/*border:2px solid red;*/
+}
+#box ul li{
+	display: none;
+}
+#box ul li.show{
+	display: block;
+}
+#box ol{
+	width: 120px;
+	/*background: blue;*/
+	z-index: 2;
+	position: absolute;
+	right: 10px;
+	bottom:10px;
+}
+#box ol li{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin:0 2px;
+	background: #fff;
+	color: #f60;
+	line-height: 20px;
+	text-align: center;
+}
+#box ol li.active{
+	background: #f60;
+	color: #fff;
+}
+
